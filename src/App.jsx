@@ -1,21 +1,23 @@
 import {Switch, Route} from "react-router-dom"
-import Commits from "./Componints/Posts/Posts.jsx"
+import Posts from "./Componints/Posts/Posts.jsx"
+import Comments from './Componints/Comments/Comments'
+
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 
 import './App.css'
 
 function App() {
   return (
-    <>
-      <h1>App.</h1>
-
+    <div className="mt-5">
       <Switch>
         <Route path="/" exact >
-          <Commits count={5} />
-          
+          <Posts count={500} />
         </Route>
+        <Route path="/comments/:page?" component={Comments} exact />
+
       </Switch>
-    </>
+    </div>
   )
 }
 
