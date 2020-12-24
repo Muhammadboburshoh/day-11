@@ -1,5 +1,6 @@
 import {Switch, Route} from "react-router-dom"
-import Photos from "./Componints/Photos/Photos.jsx"
+import Commits from "./Componints/Commits/Commits.jsx"
+
 
 import './App.css'
 
@@ -10,7 +11,8 @@ function App() {
 
       <Switch>
         <Route path="/" exact >
-          <Photos count={5} />
+          <Commits count={5} />
+          
         </Route>
       </Switch>
     </>
