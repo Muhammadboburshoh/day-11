@@ -1,5 +1,5 @@
 import {Switch, Route} from "react-router-dom"
-import Commits from "./Componints/Commits/Commits.jsx"
+import Commits from "./Componints/Posts/Posts.jsx"
 
 
 import './App.css'
